@@ -1,0 +1,83 @@
+
+	"5447a9cd4bdc2dbd208b4567": {		// Colt M4A1 5.56x45 assault rifle
+        "mod_charge": [
+          "5c0faf68d174af02a96260b8",
+          "55d44fd14bdc2d962f8b456e",
+          "6033749e88382f4fab3fd2c5"
+        ],
+        "mod_magazine": [
+          "5aaa5e60e5b5b000140293d6",
+          "61840d85568c120fdd2962a5",
+          "55d4887d4bdc2d962f8b4570",
+          "5448c1d04bdc2dff2f8b4569"
+        ],
+        "mod_pistol_grip": [
+          "5c0e2ff6d174af02a1659d4a"
+        ],
+        "mod_reciever": [
+          "55d355e64bdc2d962f8b4569"
+        ],
+        "mod_stock": [
+          "638de3603a1a4031d8260b8c",
+          "5649be884bdc2d79388b4577"
+        ],
+        "patron_in_weapon": [
+          "59e6920f86f77411d82aa167",
+          "59e6927d86f77411da468256",
+          "54527a984bdc2d4e668b4567",
+          "54527ac44bdc2d36668b4567",
+          "59e68f6f86f7746c9f75e846",
+          "59e6906286f7746c9f75e847",
+          "59e690b686f7746c9f75e848",
+          "59e6918f86f7746c9f75e849",
+          "60194943740c5d77f6705eea",
+          "601949593ae8f707c4608daa",
+          "5c0d5ae286f7741e46554302"
+        ]
+      },
+	  "55d355e64bdc2d962f8b4569": {
+        "mod_barrel": [
+          "55d3632e4bdc2d972f8b4569"
+		],
+		"mod_handguard": [
+          "5ea16acdfadf1d18c87b0784",
+          "5ea16ada09aa976f2e7a51be"
+        ],
+        "mod_scope": [
+          "591c4efa86f7741030027726",
+          "584984812459776a704a82a6",
+          "570fd721d2720bc5458b4596",
+          "609a63b6e2ff132951242d09",
+		  "57ac965c24597706be5f975c"
+        ],
+        "mod_sight_rear": [
+          "5dfa3d7ac41b2312ea33362a",
+		  "5bc09a18d4351e003562b68e"
+        ]
+      },
+      "55d3632e4bdc2d972f8b4569": {
+        "mod_gas_block": [
+          "5ae30e795acfc408fb139a0b"
+        ]
+      },
+        "mod_muzzle": [
+          "5a7c147ce899ef00150bd8b8",
+          "5a9fbb84a2750c00137fa685"
+        ]
+      },
+      "5ea16acdfadf1d18c87b0784": {
+        "mod_foregrip": [
+          "57cffcd624597763133760c5"
+        ],
+        "mod_sight_front": [
+          "5c18b90d2e2216152142466b"
+        ]
+      },
+      "5ea16ada09aa976f2e7a51be": {
+        "mod_foregrip": [
+          "57cffcd624597763133760c5"
+        ],
+        "mod_sight_front": [
+          "5c18b90d2e2216152142466b"
+        ]
+      },
