@@ -25,26 +25,38 @@
       "warn",
       {
         "selector": "default",
-        "format": ["camelCase"],
+        "format": [
+          "camelCase"
+        ],
         "leadingUnderscore": "allow"
       },
       {
         "selector": "typeLike",
-        "format": ["PascalCase"]
+        "format": [
+          "PascalCase"
+        ]
       },
       {
         "selector": "objectLiteralProperty",
-        "format": null,
+        "format": [
+          "PascalCase",
+          "camelCase"
+        ],
         "leadingUnderscore": "allow"
       },
       {
         "selector": "typeProperty",
-        "format": ["PascalCase", "camelCase"],
+        "format": [
+          "PascalCase",
+          "camelCase"
+        ],
         "leadingUnderscore": "allow"
       },
       {
         "selector": "enumMember",
-        "format": ["UPPER_CASE"]
+        "format": [
+          "UPPER_CASE"
+        ]
       }
     ],
     "@typescript-eslint/indent": [
@@ -53,7 +65,7 @@
     ],
     "@typescript-eslint/no-unused-expressions": [
       "warn",
-      { 
+      {
         "allowShortCircuit": false,
         "allowTernary": false
       }
@@ -71,5 +83,16 @@
         "allowArgumentsExplicitlyTypedAsAny": true
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.mjs",
+        "*.ts"
+      ],
+      "env": {
+        "node": true
+      }
+    }
+  ]
 }
