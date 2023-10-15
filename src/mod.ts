@@ -3168,15 +3168,8 @@ class BEAST implements IPostDBLoadMod
     {
         for (const botType of ["pmc", "assault"])
         {
-            for (const weightingTier of botConfig.equipment[botType].weightingAdjustmentsByBotLevel)
-            {
-                this.clearEquipmentWeights(weightingTier);
-            }
-
-            for (const weightingTier of botConfig.equipment[botType].weightingAdjustmentsByPlayerLevel)
-            {
-                this.clearEquipmentWeights(weightingTier);
-            }
+            this.clearEquipmentWeights(botConfig.equipment[botType].weightingAdjustmentsByBotLevel);
+            this.clearEquipmentWeights(botConfig.equipment[botType].weightingAdjustmentsByPlayerLevel);
         }
 
         // Note: This is a hacky workaround for bad data in the scav bot.json file
@@ -3184,20 +3177,26 @@ class BEAST implements IPostDBLoadMod
         botConfig.equipment["assault"].weightingAdjustmentsByPlayerLevel = [];
     }
 
-    private clearEquipmentWeights(weightingTier)
+    private clearEquipmentWeights(weightingTiers)
     {
-        if (weightingTier.equipment?.add)
+        if (weightingTiers)
         {
-            weightingTier.equipment.add.TacticalVest = {};
-            weightingTier.equipment.add.ArmorVest = {};
-            weightingTier.equipment.add.FirstPrimaryWeapon = {};
-        }
-
-        if (weightingTier.equipment?.edit)
-        {
-            weightingTier.equipment.edit.TacticalVest = {};
-            weightingTier.equipment.edit.ArmorVest = {};
-            weightingTier.equipment.edit.FirstPrimaryWeapon = {};
+            for (const weightingTier of weightingTiers)
+            {
+                if (weightingTier.equipment?.add)
+                {
+                    weightingTier.equipment.add.TacticalVest = {};
+                    weightingTier.equipment.add.ArmorVest = {};
+                    weightingTier.equipment.add.FirstPrimaryWeapon = {};
+                }
+        
+                if (weightingTier.equipment?.edit)
+                {
+                    weightingTier.equipment.edit.TacticalVest = {};
+                    weightingTier.equipment.edit.ArmorVest = {};
+                    weightingTier.equipment.edit.FirstPrimaryWeapon = {};
+                }
+            }
         }
     }
 
